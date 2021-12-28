@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".ui.user.UserDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/appbarContainer"
+            android:background="@color/colorWhite">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbarUserDetail"
+                android:fitsSystemWindows="true"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:targetApi="lollipop">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_fullname"
+                    android:textColor="@color/colorGrey"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_gravity="center" />
+
+            </com.google.android.material.appbar.MaterialToolbar>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGrey"
+                tools:layout_editor_absoluteX="0dp" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:id="@+id/nest_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/appbarContainer"
+            android:layout_weight="1">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/slideImageAvatar"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:backgroundTint="@color/colorWhite" />
+
+                        <ImageButton
+                            android:id="@+id/imgbtnBack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center_vertical"
+                            android:background="@null"
+                            android:src="@drawable/ic_chevron_left_solid_svg_svg"
+                            android:tint="@color/colorWhite"
+                            android:visibility="gone" />
+
+                        <ImageButton
+                            android:id="@+id/imgbtnNext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center_vertical|right"
+                            android:background="@null"
+                            android:src="@drawable/ic_chevron_right_solid_svg_24"
+                            android:tint="@color/colorWhite"
+                            android:visibility="gone" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/image1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="end|bottom"
+                            android:layout_marginRight="60dp"
+                            android:layout_marginBottom="10dp" />
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/image2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="end|bottom"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="10dp" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGrey"
+                        android:padding="@dimen/padding_margin_large_small"
+                        android:text="自己紹介"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/size_text" />
+
+                    <TextView
+                        android:id="@+id/tvContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/padding_margin_medium"
+                        android:text="ニックネーム"
+                        android:textColor="@color/colorGrey"
+                        android:textSize="@dimen/size_text" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorGrey"
+                        android:padding="@dimen/padding_margin_large_small"
+                        android:text="詳細プロフィール"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/size_text" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bottom"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_margin_medium">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="ニックネーム"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="@dimen/size_text" />
+
+                        <TextView
+                            android:id="@+id/tvDisplayname"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="ニックネーム"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="@dimen/size_text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bottom"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_margin_medium">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="性別"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="@dimen/size_text" />
+
+                        <TextView
+                            android:id="@+id/tvSex"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="男性"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="@dimen/size_text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bottom"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_margin_medium">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="年代"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="@dimen/size_text" />
+
+                        <TextView
+                            android:id="@+id/tvAge"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="20歳～24歳"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="@dimen/size_text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bottom"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_margin_medium">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="地域"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="@dimen/size_text" />
+
+                        <TextView
+                            android:id="@+id/tvArea"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="東京"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="@dimen/size_text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bottom"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_margin_medium">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="身長"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="@dimen/size_text" />
+
+                        <TextView
+                            android:id="@+id/tvHeight"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="東京"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="@dimen/size_text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bottom"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_margin_medium">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="体型"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="@dimen/size_text" />
+
+
+                        <TextView
+                            android:id="@+id/tvStyle"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="東京"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="@dimen/size_text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bottom"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_margin_medium"
+                        android:textColor="@color/colorGrey">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="職業"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="@dimen/size_text" />
+
+
+                        <TextView
+                            android:id="@+id/tvJob"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="東京"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="@dimen/size_text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border_bottom"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_margin_medium">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="年収"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="@dimen/size_text" />
+
+
+                        <TextView
+                            android:id="@+id/tvIncome"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="東京"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="@dimen/size_text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutBtnSend"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvMessage"
+                        android:layout_margin="@dimen/padding_margin_large"
+                        android:background="@drawable/custom_button_1"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_margin_medium">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:foregroundGravity="center"
+                            android:paddingRight="@dimen/padding_margin_large_small"
+                            android:scaleType="fitEnd"
+                            android:src="@drawable/ic_messages_svg"
+                            app:tint="@color/colorWhite">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="メッセージを送る"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/size_text" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_below="@+id/nest_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardContainerFavo">
+
+                <LinearLayout
+                    android:layout_margin="@dimen/padding_margin_large_small"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_margin_small"
+                    android:background="@drawable/background_toolbar"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_star_svg"
+                        app:tint="@color/colorWhite" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="お気に入り登録"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardUnlimit"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_margin="@dimen/padding_margin_large_small"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_margin_small"
+                    android:background="@drawable/background_toolbar"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgUnLimit"
+                        android:layout_width="21dp"
+                        android:layout_height="24dp"
+
+                        android:src="@drawable/ic_lock_svg"
+                        app:tint="@color/colorWhite" />
+
+                    <TextView
+                        android:id="@+id/tvUnLimit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="リミット解除"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_bottom_sheet_dialog_fragment">
+
+                <LinearLayout
+                    android:layout_margin="@dimen/padding_margin_large_small"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_margin_small"
+                    android:background="@drawable/background_toolbar"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_warning_svg"
+                        app:tint="@color/colorWhite" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="通報"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

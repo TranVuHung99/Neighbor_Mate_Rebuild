@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent"
+    tools:context=".ui.chat.ChatFragment">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/coorContainer">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/appbarContainer"
+            android:background="@color/colorWhite">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbarFragmentSearch"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:targetApi="lollipop">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="トーク"
+                    android:textFontWeight="900"
+                    android:textColor="@color/colorGrey"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_gravity="center" />
+
+                <ImageButton
+                    android:id="@+id/imgbtnRefresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_refresh_svg"
+                    android:background="@null"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="@dimen/padding_margin_medium"/>
+
+            </com.google.android.material.appbar.MaterialToolbar>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGrey"
+                tools:layout_editor_absoluteX="0dp" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutTab"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/coorContainer"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnRoster"
+                android:layout_marginTop="@dimen/padding_margin_large_small"
+                android:layout_marginEnd="@dimen/padding_margin_large_small"
+                android:layout_marginBottom="@dimen/padding_margin_large_small"
+                android:layout_marginStart="6dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:text="トーク"
+                android:textSize="12sp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:stateListAnimator="@null"
+                android:orientation="vertical"
+                android:drawableTop="@drawable/ic_messages_svg"/>
+
+            <TextView
+                android:layout_marginEnd="1dp"
+                android:layout_marginTop="4dp"
+                android:id="@+id/badgeRoster"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="22dp"
+                android:layout_gravity="top|end"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/badge_background"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textSize="12sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+        <Button
+            style="@style/ButtonStyleGrey"
+            android:id="@+id/btnNotice"
+            android:layout_margin="@dimen/padding_margin_large_small"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:text="お知らせ"
+            android:textColor="@color/colorWhite"
+            android:orientation="vertical"
+            android:drawableTint="@color/colorWhite"
+            android:stateListAnimator="@null"
+            android:drawableTop="@drawable/ic_notification_svg"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginEnd="1dp"
+                android:layout_marginTop="4dp"
+                android:id="@+id/badgeNotice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="22dp"
+                android:layout_gravity="top|end"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/badge_background"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textSize="12sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content">
+
+        <Button
+            style="@style/ButtonStyleGrey"
+            android:id="@+id/btnCampaign"
+            android:layout_marginTop="@dimen/padding_margin_large_small"
+            android:layout_marginStart="@dimen/padding_margin_large_small"
+            android:layout_marginBottom="@dimen/padding_margin_large_small"
+            android:layout_marginEnd="6dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:text="キャンペーン"
+            android:textColor="@color/colorWhite"
+            android:stateListAnimator="@null"
+            android:orientation="vertical"
+            android:drawableTint="@color/colorWhite"
+            android:drawableTop="@drawable/ic_volume_svg"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="4dp"
+                android:id="@+id/badgeCampaign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="22dp"
+                android:layout_gravity="top|end"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/badge_background"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:textSize="12sp" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_below="@+id/layoutTab"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <FrameLayout
+        android:layout_marginTop="1dp"
+        android:id="@+id/pagerContainerChat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layoutTab"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:nestedScrollingEnabled="false" />
+
+<!--    <ProgressBar-->
+<!--        android:id="@+id/progressLoading"-->
+<!--        android:indeterminateTint="@color/colorMain"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_centerVertical="true"/>-->
+
+</RelativeLayout>

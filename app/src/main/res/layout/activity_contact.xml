@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.ContactActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        tools:ignore="MissingConstraints">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrey"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            tools:targetApi="lollipop">
+
+            <TextView
+                android:id="@+id/toolbar_text_fullname"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="お問い合わせ"
+                android:textColor="@color/colorGrey" />
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/wrapper"
+            android:clickable = "true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:padding="@dimen/padding_margin_large_small"
+                android:background="@color/colorGrey"
+                android:textColor="@color/colorWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/size_text"
+                android:text="お問い合わせ内容"/>
+
+            <FrameLayout
+                android:layout_marginTop="@dimen/padding_margin_large"
+                android:layout_marginBottom="@dimen/padding_margin_medium"
+                android:padding="@dimen/padding_margin_large_small"
+                android:background="@drawable/custom_edittext_2"
+                android:layout_marginLeft="@dimen/padding_margin_small"
+                android:layout_marginRight="@dimen/padding_margin_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edtContent"
+                    android:padding="@dimen/padding_margin_small"
+                    android:maxLength="150"
+                    android:background="@android:color/transparent"
+                    android:minLines="7"
+                    android:gravity="start"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="@dimen/size_text"
+                    android:hint="入力してください"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/btnSend"
+                android:textSize="@dimen/size_text"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/custom_button_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="100dp"
+                android:padding="@dimen/padding_margin_medium"
+                android:textFontWeight="700"
+                android:text="送 信"
+                android:gravity="center"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/colorMain"/>
+
+    </FrameLayout>
+
+</LinearLayout>

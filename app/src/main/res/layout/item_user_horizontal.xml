@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/padding_margin_small"
+    android:layout_margin="@dimen/padding_margin_large_small"
+    android:id="@+id/cardContainerProfile">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_margin_small">
+
+        <com.sangcomz.fishbun.util.SquareImageView
+            android:id="@+id/imgAvatar"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_margin_large_small"
+            android:paddingRight="@dimen/padding_margin_large_small"
+            android:text="TextView"
+            android:lines="1"
+            android:textColor="@color/colorPink"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/tvMessageHor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/padding_margin_large_small"
+            android:paddingRight="@dimen/padding_margin_large_small"
+            android:text="TextView"
+            android:maxLines="2"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

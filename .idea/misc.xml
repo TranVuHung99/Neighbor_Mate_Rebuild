@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/background_toolbar.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/badge_background.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/border_bottom.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/button_block_outline.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/custom_button_1.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/custom_button_2.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/custom_edittext_2.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/custom_edittext_3.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/custom_form_register.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/dotted.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/exclamation_triangle_fill.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/hyperlink_underline.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/ic_back_svg.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/ic_camera_svg.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/ic_chevron_left_solid_svg_svg.xml" value="0.13177083333333334" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/ic_chevron_right_solid_svg_16.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/ic_chevron_right_solid_svg_24.xml" value="0.13177083333333334" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/ic_clock_regular_svg.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/ic_comment_dots_solid_svg.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/ic_foot_svg.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/ic_grid_view_svg.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/ic_keijiban_create_svg.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/ic_list_svg.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/ic_list_view_svg.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/ic_messages_svg.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/ic_notification_svg.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/ic_refresh_svg.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/ic_search_svg.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/ic_setting_svg.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/ic_star_svg.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/ic_tooltip_sky.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/ic_tooltip_svg.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/ic_volume_svg.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/message_bubble_left.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/message_bubble_right.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable-v24/spinner_bg.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable/border_radius_background_8dp.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable/custom_edittext_1.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable/ic_close_svg.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable/ic_image_solid_svg.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable/ic_location_svg.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable/ic_lock_svg.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable/ic_picture_svg.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable/ic_pin.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable/ic_plus_svg.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable/ic_unlock_svg.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/drawable/ic_warning_svg.xml" value="0.19010416666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/acivity_favorite.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/activity_block.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/activity_change_device_my_profile.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/activity_change_device_register.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/activity_chat_message.xml" value="0.16666666666666666" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/activity_config.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/activity_contact.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/activity_edit_profile.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/activity_foot_print.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/activity_keijiban_detail.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/activity_keijiban_post.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/activity_keijiban_search.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/activity_main.xml" value="0.12" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/activity_maps.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/activity_message_photo_view.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/activity_notice.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/activity_notice_detail.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/activity_photo_view.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/activity_point_setting.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/activity_search.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/activity_splash.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/activity_user_detail.xml" value="0.115625" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/activity_webview.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/bottom_sheet.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/dialog_report.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/fragment_chat.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/fragment_chat2.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/fragment_chat_campaign.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/fragment_chat_notification.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/fragment_chat_user.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/fragment_keijiban.xml" value="0.3333333333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/fragment_keijiban_search_complete.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/fragment_keijiban_search_form.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/fragment_point.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/fragment_profile.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/fragment_profile_edit.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/fragment_search.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/fragment_search_complete.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/fragment_search_form.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/fragment_slide_image_user.xml" value="0.115625" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/item_message_left.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/item_message_right.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/item_notification.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/item_point.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/item_point_setting.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/item_roster.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/item_toolbar_utility.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/item_user_horizontal.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/item_user_vertical.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/item_user_vertical_block.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/remove_border.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/layout/spinner_item.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/menu/toolbar_keijiban_menu.xml" value="0.17395833333333333" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/menu/toolbar_register_menu.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/android_java_examples/NeighborMateRebuild/app/src/main/res/menu/toolbar_search_menu.xml" value="0.17395833333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

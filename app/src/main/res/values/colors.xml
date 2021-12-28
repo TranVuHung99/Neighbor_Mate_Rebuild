@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="colorMain">#e70b55</color>
+    <color name="colorGrey">#aea8ab</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorPink">#ed5a89</color>
+    <color name="colorWhiteParent">#f7f7f7</color>
+    <color name="colorPinkMess">#f7d2dd</color>
+    <color name="colorSkyMess">#9ec9ec</color>
+    <color name="transparent">#66000000</color>
+
+    <color name="textDefault">#CC000000</color>
+
+    <color name="badgeBackground">#2c64f4</color>
+</resources>

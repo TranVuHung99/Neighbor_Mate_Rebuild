@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".ui.chat.messages.ChatMessageActivity">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/coorContainer">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/appbarContainer"
+            android:background="@color/colorWhite">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbarMessage"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:targetApi="lollipop">
+
+                <TextView
+                    android:id="@+id/toolbar_text_fullname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_fullname"
+                    android:textColor="@color/colorGrey"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_gravity="center" />
+
+                <ImageButton
+                    android:id="@+id/imgbtnRefresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_refresh_svg"
+                    android:background="@null"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="@dimen/padding_margin_medium"/>
+
+            </com.google.android.material.appbar.MaterialToolbar>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGrey"
+                tools:layout_editor_absoluteX="0dp" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/viewBorder"
+        android:layout_below="@+id/coorContainer">
+
+        <!--        <androidx.coordinatorlayout.widget.CoordinatorLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent">-->
+
+        <!--            <androidx.core.widget.NestedScrollView-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:id="@+id/scrollChat">-->
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/swipe_container">
+
+            <androidx.recyclerview.widget.RecyclerView
+                app:stackFromEnd="true"
+                android:id="@+id/recycleChatMessage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <!--            </androidx.core.widget.NestedScrollView>-->
+
+        <!--        </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+        <ProgressBar
+            android:id="@+id/progressLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/colorMain" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/padding_margin_small"
+        android:background="@color/colorWhiteParent"
+        android:id="@+id/layoutFormMess"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imgbtn_bottom_sheet"
+                android:scaleType="fitCenter"
+                android:background="@drawable/custom_button_2"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="@dimen/padding_margin_small"
+                android:layout_weight="1.25"
+                android:tint="@color/colorWhite"
+                android:src="@drawable/ic_plus_svg"/>
+
+            <EditText
+                android:id="@+id/edtMessage"
+                android:background="@drawable/custom_edittext_1"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:textSize="16sp"
+                android:hint="@string/text_enter_mess"
+                android:padding="@dimen/padding_margin_large_small"
+                android:layout_weight="8"/>
+
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="42dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="8dp"
+                android:textSize="12sp"
+                android:background="@drawable/custom_button_1"
+                android:textColor="@color/colorWhite"
+                android:text="@string/text_send"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menuContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhiteParent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/padding_margin_large_small"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/btnSendImage"
+                    android:layout_margin="@dimen/padding_margin_large_small"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_margin_large_small"
+                    android:background="@drawable/background_toolbar"
+                    android:layout_width="0dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:tint="@color/colorWhite"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_picture_svg" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="写真選択"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="13sp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/btnSendLocation"
+                    android:layout_margin="@dimen/padding_margin_large_small"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_margin_large_small"
+                    android:background="@drawable/background_toolbar"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:tint="@color/colorWhite"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_location_svg" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="地図情報"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="13sp"/>
+                        </LinearLayout>
+
+                        <ProgressBar
+                            android:id="@+id/progressBarLocation"
+                            android:layout_gravity="top|right"
+                            android:visibility="gone"
+                            android:layout_margin="4dp"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"/>
+
+                    </FrameLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/btnUnlimit"
+                    android:layout_margin="@dimen/padding_margin_large_small"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_margin_large_small"
+                    android:background="@drawable/background_toolbar"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgUnLimit"
+                        android:layout_width="21dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_lock_svg"
+                        android:tint="@color/colorWhite" />
+
+                    <TextView
+                        android:id="@+id/tvUnLimit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="リミット解除"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="13sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/btnAddFavorite"
+                    android:layout_margin="@dimen/padding_margin_large_small"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_margin_large_small"
+                    android:background="@drawable/background_toolbar"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:tint="@color/colorWhite"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_star_svg" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="お気に入り登録"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="13sp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/btnReport"
+                    android:layout_margin="@dimen/padding_margin_large_small"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_margin_large_small"
+                    android:background="@drawable/background_toolbar"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:tint="@color/colorWhite"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_warning_svg" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="通報"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="13sp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_margin="@dimen/padding_margin_large_small"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_margin_large_small"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_height="0dp">
+                </LinearLayout>
+
+                <View
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_above="@+id/layoutFormMess"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey"
+        android:id="@+id/viewBorder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/layoutIsConnected"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="@color/colorWhite"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="インターネット接続を確認して下さい。"
+            android:textSize="@dimen/size_text"
+            android:gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

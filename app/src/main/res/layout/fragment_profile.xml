@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.profile.ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/appbarContainer"
+            android:background="@color/colorWhite">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbarFragmentSearch"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                tools:targetApi="lollipop">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_profile"
+                    android:textFontWeight="900"
+                    android:textColor="@color/colorGrey"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_gravity="center" />
+
+            </com.google.android.material.appbar.MaterialToolbar>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGrey"
+                tools:layout_editor_absoluteX="0dp" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_below="@+id/appbarContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:padding="@dimen/padding_margin_small"
+                    android:gravity="center"
+                    android:id="@+id/layoutAvatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardAvatar"
+                        android:layout_weight="3"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="5dp"
+                        android:layout_height="wrap_content">
+
+                        <com.sangcomz.fishbun.util.SquareImageView
+                            android:id="@+id/imgAvatar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerCrop"/>
+
+
+                        <ProgressBar
+                            android:id="@+id/pb_load_image"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:indeterminateTint="@color/colorMain"
+                            android:visibility="visible" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="8">
+
+                        <LinearLayout
+                            android:gravity="center"
+                            android:layout_width="0dp"
+                            android:layout_weight="7"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_marginLeft="@dimen/padding_margin_small"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:id="@+id/tvUsername"
+                                    android:textStyle="bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorPink"
+                                    android:textSize="14sp"/>
+                                <TextView
+                                    android:layout_marginLeft="@dimen/padding_margin_large_small"
+                                    android:textStyle="bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="さん "
+                                    android:textSize="12sp"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_marginLeft="@dimen/padding_margin_small"
+                                android:id="@+id/tvAreaName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="12sp" />
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:layout_marginTop="@dimen/padding_margin_medium"
+                                android:layout_marginLeft="@dimen/padding_margin_small"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="所持ポイント"
+                                android:textSize="12sp" />
+
+                            <LinearLayout
+                                android:layout_marginLeft="@dimen/padding_margin_small"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+                                <TextView
+                                    android:id="@+id/tvPoint"
+                                    android:textStyle="bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/colorPink"
+                                    android:textSize="14sp"/>
+                                <TextView
+                                    android:textStyle="bold"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="ポイント"
+                                    android:layout_marginLeft="@dimen/padding_margin_small"
+                                    android:textSize="12sp"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="4.5"
+                            android:weightSum="2"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:autoSizeTextType="uniform"
+                                android:autoSizeMinTextSize="10sp"
+                                android:autoSizeMaxTextSize="13sp"
+                                android:autoSizeStepGranularity="1sp"
+                                android:id="@+id/btnEditProfile"
+                                android:layout_marginTop="@dimen/padding_margin_large_small"
+                                android:textColor="@color/colorWhite"
+                                android:layout_width="match_parent"
+                                android:minWidth="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                android:paddingHorizontal="0dp"
+                                style="@style/ButtonStyleGrey"
+                                android:text="プロフ編集" />
+
+                            <Button
+                                android:id="@+id/btnPoint"
+                                android:autoSizeTextType="uniform"
+                                android:autoSizeMinTextSize="10sp"
+                                android:autoSizeMaxTextSize="13sp"
+                                android:autoSizeStepGranularity="1sp"
+                                android:layout_marginTop="@dimen/padding_margin_large_small"
+                                android:textColor="@color/colorWhite"
+                                android:layout_width="match_parent"
+                                android:minWidth="0dp"
+                                android:paddingHorizontal="0dp"
+                                android:layout_height="0dp"
+                                android:layout_weight="1"
+                                style="@style/ButtonStyle"
+                                android:text="ポイント購入" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGrey"
+                    tools:layout_editor_absoluteX="0dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="@dimen/padding_margin_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/recycleProfileContainer"/>
+
+
+                <View
+                    android:layout_marginTop="@dimen/padding_margin_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorGrey"
+                    tools:layout_editor_absoluteX="0dp" />
+
+
+                <TextView
+                    android:id="@+id/tvFormChangeDevice"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="データ引継ぎ"
+                    android:padding="@dimen/padding_margin_medium"
+                    android:drawableRight="@drawable/ic_chevron_right_solid_svg_16"/>
+
+                <TextView
+                    android:id="@+id/tvPolicy"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="プライバシーポリシー"
+                    android:padding="@dimen/padding_margin_medium"
+                    android:drawableRight="@drawable/ic_chevron_right_solid_svg_16"/>
+
+                <TextView
+                    android:id="@+id/tvQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_bottom"
+                    android:drawableRight="@drawable/ic_chevron_right_solid_svg_16"
+                    android:padding="@dimen/padding_margin_medium"
+                    android:text="よくあるお問い合わせ" />
+
+                <TextView
+                    android:id="@+id/tvContactUs"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="お問い合わせ"
+                    android:padding="@dimen/padding_margin_medium"
+                    android:drawableRight="@drawable/ic_chevron_right_solid_svg_16"/>
+
+                <TextView
+                    android:id="@+id/tvCompany"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="会社概要"
+                    android:padding="@dimen/padding_margin_medium"
+                    android:drawableRight="@drawable/ic_chevron_right_solid_svg_16"/>
+
+                <TextView
+                    android:id="@+id/tvTermofService"
+                    android:background="@drawable/border_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="利用規約"
+                    android:padding="@dimen/padding_margin_medium"
+                    android:drawableRight="@drawable/ic_chevron_right_solid_svg_16"/>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

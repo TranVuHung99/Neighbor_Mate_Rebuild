@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--
+    <item
+        android:top="4dp"
+        android:right="24dp"
+        android:drawable="@drawable/ic_tooltip_svg"
+         />
+-->
+
+    <item
+        android:left="16dp"
+        android:gravity="center_vertical|right">
+        <layer-list>
+            <item>
+                <shape
+                    xmlns:android="http://schemas.android.com/apk/res/android">
+                    <corners android:radius="8dp" />
+
+                    <solid android:color="@color/colorPinkMess" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+</layer-list>

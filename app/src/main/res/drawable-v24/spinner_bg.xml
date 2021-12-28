@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <solid android:color="@color/colorWhite" />
+
+            <corners
+                android:radius="8dp" />
+        </shape>
+    </item>
+    <item android:gravity="center_vertical|right" android:right="8dp">
+        <layer-list>
+            <item>
+                <layer-list>
+                    <item android:drawable="@drawable/ic_chevron_right_solid_svg_16" android:gravity="center_vertical|right" android:right="5dp"/>
+                </layer-list>
+            </item>
+            <item android:width="30dp" android:height="10dp" android:bottom="21dp" android:gravity="center">
+                <shape android:shape="rectangle">
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</layer-list>

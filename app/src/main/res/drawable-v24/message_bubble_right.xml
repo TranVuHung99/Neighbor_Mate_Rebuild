@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+            <item
+                android:gravity="center_vertical|left"
+                android:right="16dp">
+                <layer-list>
+                    <item>
+                        <shape
+                            xmlns:android="http://schemas.android.com/apk/res/android">
+                            <corners android:radius="8dp" />
+
+                            <solid android:color="@color/colorSkyMess" />
+                        </shape>
+                    </item>
+                </layer-list>
+            </item>
+
+    <!--
+            <item
+                android:top="10dp"
+                android:right="16dp">
+
+                <vector xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:width="25dp"
+                    android:height="19dp"
+                    android:viewportWidth="25"
+                    android:viewportHeight="19">
+                    <path
+                        android:fillColor="@color/colorSkyMess"
+                        android:pathData="M25,4c0,0 -8.7,1 -15,0C3.8,3 0,0 0,0s1.3,4.8 7,10c6.3,5.7 18,8.9 18,8.9L25,4z"
+                        android:fillType="evenOdd"/>
+                </vector>
+            </item>
+-->
+
+</layer-list>

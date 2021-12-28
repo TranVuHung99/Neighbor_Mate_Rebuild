@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardUserContainer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_bottom">
+
+        <ImageView
+            android:id="@+id/imgUnread"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/unread"
+            android:visibility="gone"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:weightSum="11"
+                android:id="@+id/layoutAvatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:id="@+id/cardAvatar"
+                android:layout_height="wrap_content"
+                app:cardElevation="0dp"
+                app:cardCornerRadius="@dimen/padding_margin_small">
+
+                <com.sangcomz.fishbun.util.SquareImageView
+                    android:id="@+id/imgAvatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/layoutAvatar"
+                app:layout_constraintTop_toTopOf="parent" >
+
+                <TextView
+                    android:id="@+id/tvUsername"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_margin_small"
+                    android:lines="1"
+                    android:text="TextView"
+                    android:textColor="@color/colorMain"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <LinearLayout
+                    android:id="@+id/linearContainer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_margin_small"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvUsername">
+
+                    <TextView
+                        android:id="@+id/tvAreaName"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="TextView"
+                        android:textSize="13sp" />
+
+<!--
+                    <TextView
+                        android:id="@+id/tvTimeMessage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/padding_margin_large_small"
+                        android:drawableLeft="@drawable/ic_clock_regular_svg"
+                        android:paddingRight="@dimen/padding_margin_medium"
+                        android:gravity="start"
+                        android:text="00/00 00:00"
+                        android:textSize="13sp" />
+-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/viewBorderDotted"
+                    android:layout_width="0dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="@dimen/padding_margin_small"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearContainer">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/dotted"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/layoutAvatar"
+                        app:layout_constraintTop_toBottomOf="@+id/linearContainer" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingHorizontal="2dp"
+                        android:src="@drawable/ic_chevron_right_solid_svg_16" />
+                </LinearLayout>
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/tvMessage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_margin_small"
+                    android:maxLines="2"
+                    android:minLines="2"
+                    android:paddingRight="@dimen/padding_margin_medium"
+                    android:text="TextView"
+                    android:textSize="13sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/viewBorderDotted" />
+
+                <TextView
+                    android:id="@+id/tvCamera"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_camera_svg"
+                    android:layout_marginLeft="@dimen/padding_margin_small"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvUsername"
+                    app:layout_constraintStart_toEndOf="@+id/tvUsername"
+                    app:layout_constraintTop_toTopOf="@+id/tvUsername" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

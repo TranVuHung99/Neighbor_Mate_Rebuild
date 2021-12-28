@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_search"
+        android:icon="@drawable/footer_search_grey"
+        android:title="@string/title_search" />
+
+    <item
+        android:numericShortcut="10"
+        android:id="@+id/navigation_chat"
+        android:icon="@drawable/footer_message_grey"
+        android:title="@string/title_chat" />
+
+    <item
+        android:id="@+id/navigation_notification"
+        android:icon="@drawable/footer_keijiban_grey"
+        android:title="@string/title_notification" />
+
+    <item
+        android:id="@+id/navigation_point"
+        android:icon="@drawable/footer_point_grey"
+        android:iconTint="@color/colorGrey"
+        android:title="@string/title_point" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/footer_profile_grey"
+        android:title="@string/title_profile" />
+</menu>

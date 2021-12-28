@@ -1,0 +1,42 @@
+<resources>
+<!--    <string name="app_name">ご近所メイト STG</string>-->
+    <string name="title_search">サーチ</string>
+    <string name="title_campaign">Campaign</string>
+    <string name="load">Load</string>
+    <string name="text_fullname">フルネーム</string>
+    <string name="text_nickname">ニックネーム</string>
+    <string name="title_register">プロフィールの登録</string>
+    <string name="profile_search">プロフ検索設定</string>
+    <string name="title_chat">トーク</string>
+    <string name="title_notification">掲示板</string>
+    <string name="title_point">ポイント</string>
+    <string name="title_profile">マイページ</string>
+    <string name="view_hon">ViewHon</string>
+    <string name="view_ver">ViewVer</string>
+    <string name="text_send">送信</string>
+    <string name="text_enter_mess">メッセージを入力</string>
+    <string name="text_register">プロフィールを登録する</string>
+    <string name="sex">性別</string>
+    <string name="era">年代</string>
+    <string name="height">身長</string>
+    <string name="figure">体型</string>
+    <string name="profession">職業</string>
+    <string name="annual_income">年収</string>
+    <string name="sort_order">並び順</string>
+    <string name="find_0">検索結果０件です</string>
+    <string name="content">メールアドレスとパスワードを登録しておくと機種変更をした際にデータの引継ぎができます。
+        \n引継ぎを行った際は現在のアカウント情報は削除され、使用出来なくなります。
+        \n※パスワードは8文字以上で大文字を含むアルファベットと数字の入力が必要です。</string>
+    <string name="device_transfer">以前ご利用されていたアカウントで登録した引継ぎ情報(メールアドレス・パスワード)を下記にご入力頂くことで、以前のアカウントを継続してご利用頂くことが出来ます。
+    </string>
+    <string name="notification_channel_id">notification_channel_id</string>
+    <string name="notification_channel_name">@string/app_name</string>
+
+
+    <string name="title_activity_maps">Map</string>
+    <string-array name="city">
+        <item>市区町村</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

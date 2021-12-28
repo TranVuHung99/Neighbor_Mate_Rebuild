@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_gravity="end"
+    android:layout_height="wrap_content"
+    android:paddingRight="8dp"
+    android:paddingTop="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/viewBubble"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/message_bubble_right"
+        android:backgroundTintMode="screen"
+        android:padding="8dp">
+
+        <ImageView
+            android:scaleX="-1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_tooltip_sky"
+            android:backgroundTint="@color/colorSkyMess"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+        </ImageView>
+
+        <ImageView
+            android:layout_marginRight="16dp"
+            android:id="@+id/imgViewRght"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <!--        app:layout_constraintWidth_default="wrap"-->
+        <!--        app:layout_constraintHeight_default="wrap"-->
+
+        <TextView
+            android:id="@+id/text_message_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="16dp"
+            android:minWidth="24dp"
+            android:text="I'm fine!"
+            android:textColor="@color/textDefault"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/colorMain"
+            android:layout_marginRight="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:visibility="gone" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/text_message_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:minWidth="24dp"
+        android:text="00/00 00:00"
+        android:textSize="10sp"
+        android:lines="1"
+        app:layout_constraintStart_toStartOf="@id/viewBubble"
+        app:layout_constraintTop_toBottomOf="@+id/viewBubble" />
+
+    <TextView
+        android:id="@+id/tvUnread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="既読"
+        android:visibility="gone"
+        android:textSize="12sp"
+        android:layout_marginRight="4dp"
+        app:layout_constraintRight_toLeftOf="@+id/viewBubble"
+        app:layout_constraintBottom_toBottomOf="@+id/viewBubble"
+        app:layout_constraintTop_toTopOf="@+id/viewBubble"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

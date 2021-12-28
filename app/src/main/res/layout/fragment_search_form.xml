@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent"
+    tools:context=".ui.search.complete.SearchFormFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/appbarContainer">
+
+            <LinearLayout
+                android:background="@drawable/border_bottom"
+                android:padding="@dimen/padding_margin_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:textColor="@color/colorGrey"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sex"
+                    android:textSize="@dimen/size_text"/>
+
+                <Spinner
+                    android:id="@+id/spinnerSex"
+                    style="@style/SpinnerTheme"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:popupBackground="@drawable/spinner_bg"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/border_bottom"
+                android:padding="@dimen/padding_margin_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:textColor="@color/colorGrey"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/era"
+                    android:textSize="@dimen/size_text"/>
+
+                <Spinner
+                    android:id="@+id/spinnerEra"
+                    style="@style/SpinnerTheme"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:popupBackground="@drawable/spinner_bg"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/border_bottom"
+                android:padding="@dimen/padding_margin_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:textColor="@color/colorGrey"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/height"
+                    android:textSize="@dimen/size_text"/>
+
+                <Spinner
+                    android:id="@+id/spinnerHeight"
+                    style="@style/SpinnerTheme"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:popupBackground="@drawable/spinner_bg"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/border_bottom"
+                android:padding="@dimen/padding_margin_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:textColor="@color/colorGrey"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/figure"
+                    android:textSize="@dimen/size_text"/>
+
+                <Spinner
+                    android:id="@+id/spinnerFigure"
+                    style="@style/SpinnerTheme"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:popupBackground="@drawable/spinner_bg"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/border_bottom"
+                android:padding="@dimen/padding_margin_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:textColor="@color/colorGrey"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/profession"
+                    android:textSize="@dimen/size_text"/>
+
+                <Spinner
+                    android:id="@+id/spinnerProfession"
+                    style="@style/SpinnerTheme"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:popupBackground="@drawable/spinner_bg"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/border_bottom"
+                android:padding="@dimen/padding_margin_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:textColor="@color/colorGrey"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/annual_income"
+                    android:textSize="@dimen/size_text"/>
+
+                <Spinner
+                    android:id="@+id/spinnerAnnualIcome"
+                    style="@style/SpinnerTheme"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:popupBackground="@drawable/spinner_bg"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/border_bottom"
+                android:padding="@dimen/padding_margin_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:textColor="@color/colorGrey"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/sort_order"
+                    android:textSize="@dimen/size_text"/>
+
+                <Spinner
+                    android:textColor="@color/colorGrey"
+                    android:id="@+id/spinnerSortOrder"
+                    style="@style/SpinnerTheme"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:popupBackground="@drawable/spinner_bg"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSubmitSearchForm"
+                android:text="この条件で表示"
+                android:textSize="@dimen/size_text"
+                android:textColor="@color/colorWhite"
+                android:layout_marginRight="@dimen/padding_margin_medium"
+                android:layout_marginLeft="@dimen/padding_margin_medium"
+                android:layout_marginTop="@dimen/padding_margin_large"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button_1"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

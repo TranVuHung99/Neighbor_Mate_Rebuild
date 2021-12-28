@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.profile.ConfigActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbarContainer"
+        android:background="@color/colorWhite">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbarConfig"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:targetApi="lollipop">
+
+            <TextView
+                android:id="@+id/toolbar_text_fullname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="設定"
+                android:textColor="@color/colorGrey"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_gravity="center" />
+
+        </com.google.android.material.appbar.MaterialToolbar>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrey"
+            tools:layout_editor_absoluteX="0dp" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <Switch
+        android:padding="@dimen/padding_margin_medium"
+        android:id="@+id/swSetting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="プッシュ受信設定"
+        android:textColor="@color/colorGrey"/>
+
+    <TextView
+        android:id="@+id/tvBlock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ブロック済みユーザー一覧"
+        android:textColor="@color/colorGrey"
+        android:padding="@dimen/padding_margin_medium"
+        android:drawableRight="@drawable/ic_chevron_right_solid_svg_16"/>
+
+    <LinearLayout
+        android:padding="@dimen/padding_margin_medium"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textColor="@color/colorGrey"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:text="バージョン"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tvVersion"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_marginBottom="@dimen/padding_margin_small"
+        android:layout_marginTop="@dimen/padding_margin_medium"
+        android:layout_marginRight="@dimen/padding_margin_small"
+        android:layout_marginLeft="@dimen/padding_margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="通報された内容は24時間以内に運用チームが確認します。"/>
+
+    <EditText
+        android:textColor="@color/colorGrey"
+        android:id="@+id/edtreport"
+        android:minLines="3"
+        android:gravity="start"
+        android:layout_margin="@dimen/padding_margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:hint="通報内容を入力してください。"/>
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/padding_margin_small"
+        android:layout_marginTop="@dimen/padding_margin_medium"
+        android:layout_marginRight="@dimen/padding_margin_small"
+        android:layout_marginLeft="@dimen/padding_margin_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:textColor="@color/colorMain"
+            android:layout_marginRight="@dimen/padding_margin_medium"
+            android:id="@+id/tvSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="はい"/>
+
+        <TextView
+            android:textColor="@color/colorMain"
+            android:id="@+id/tvCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="いいえ"/>
+    </LinearLayout>
+
+</LinearLayout>

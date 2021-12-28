@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile.EditProfileActivity"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/appbarContainer"
+            android:background="@color/colorWhite">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbarEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:targetApi="lollipop">
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="プロフィール編集"
+                    android:textColor="@color/colorGrey"
+                    style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                    android:layout_gravity="center" />
+
+            </com.google.android.material.appbar.MaterialToolbar>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorGrey"
+                tools:layout_editor_absoluteX="0dp" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/appbarContainer">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:padding="@dimen/padding_margin_small"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:cardCornerRadius="5dp">
+
+                        <com.sangcomz.fishbun.util.SquareImageView
+                            android:scaleType="centerCrop"
+                            android:id="@+id/imgAvatar1"
+                            android:adjustViewBounds="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <ProgressBar
+                            android:id="@+id/pb_load_image_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:indeterminateTint="@color/colorMain"
+                            android:visibility="visible" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginLeft="@dimen/padding_margin_small"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="5dp">
+
+                        <com.sangcomz.fishbun.util.SquareImageView
+                            android:scaleType="centerCrop"
+                            android:id="@+id/imgAvatar2"
+                            android:adjustViewBounds="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <ProgressBar
+                            android:id="@+id/pb_load_image_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:indeterminateTint="@color/colorMain"
+                            android:visibility="visible" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginLeft="@dimen/padding_margin_small"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="5dp">
+
+                        <com.sangcomz.fishbun.util.SquareImageView
+                            android:scaleType="centerCrop"
+                            android:id="@+id/imgAvatar3"
+                            android:adjustViewBounds="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <ProgressBar
+                            android:id="@+id/pb_load_image_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:indeterminateTint="@color/colorMain"
+                            android:visibility="visible" />
+                    </androidx.cardview.widget.CardView>
+
+                    <View
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="(1枚目の画像が一覧に表示されます)"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/padding_margin_large"
+                    android:layout_marginTop="@dimen/padding_margin_medium"/>
+
+                <TextView
+                    android:padding="@dimen/padding_margin_large_small"
+                    android:background="@color/colorGrey"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/size_text"
+                    android:text="(1枚目の画像が一覧に表示されます)"/>
+
+                <LinearLayout
+                    android:background="@drawable/border_bottom"
+                    android:padding="@dimen/padding_margin_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:textColor="@color/colorGrey"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="ニックネーム"
+                        android:textSize="@dimen/size_text"/>
+
+                    <TextView
+                        android:textColor="@color/colorGrey"
+                        android:id="@+id/tvDisplayname"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/size_text"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/border_bottom"
+                    android:padding="@dimen/padding_margin_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:textColor="@color/colorGrey"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="性別"
+                        android:textSize="@dimen/size_text"/>
+
+                    <TextView
+                        android:textColor="@color/colorGrey"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/tvSex"
+                        android:textSize="@dimen/size_text"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/border_bottom"
+                    android:padding="@dimen/padding_margin_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:textColor="@color/colorGrey"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="年代"
+                        android:textSize="@dimen/size_text"/>
+
+                    <TextView
+                        android:textColor="@color/colorGrey"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/tvAge"
+                        android:textSize="@dimen/size_text"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/border_bottom"
+                    android:padding="@dimen/padding_margin_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:textColor="@color/colorGrey"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="地域"
+                        android:textSize="@dimen/size_text"/>
+
+                    <TextView
+                        android:textColor="@color/colorGrey"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:id="@+id/tvArea"
+                        android:textSize="@dimen/size_text"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/border_bottom"
+                    android:padding="@dimen/padding_margin_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:textColor="@color/colorGrey"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="身長"
+                        android:textSize="@dimen/size_text"/>
+
+                    <Spinner
+                        android:id="@+id/spinnerHeight"
+                        style="@style/SpinnerTheme"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:popupBackground="@drawable/spinner_bg"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/border_bottom"
+                    android:padding="@dimen/padding_margin_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:textColor="@color/colorGrey"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="体型"
+                        android:textSize="@dimen/size_text"/>
+
+                    <Spinner
+                        android:id="@+id/spinnerStyle"
+                        style="@style/SpinnerTheme"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:popupBackground="@drawable/spinner_bg"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:textColor="@color/colorGrey"
+                    android:background="@drawable/border_bottom"
+                    android:padding="@dimen/padding_margin_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:textColor="@color/colorGrey"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="職業"
+                        android:textSize="@dimen/size_text"/>
+
+                    <Spinner
+                        android:id="@+id/spinnerJob"
+                        style="@style/SpinnerTheme"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:popupBackground="@drawable/spinner_bg"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@drawable/border_bottom"
+                    android:padding="@dimen/padding_margin_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <TextView
+                        android:textColor="@color/colorGrey"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="年収"
+                        android:textSize="@dimen/size_text"/>
+
+                    <Spinner
+                        android:id="@+id/spinnerIncome"
+                        style="@style/SpinnerTheme"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:popupBackground="@drawable/spinner_bg"/>
+                </LinearLayout>
+
+                <TextView
+                    android:padding="@dimen/padding_margin_large_small"
+                    android:background="@color/colorGrey"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/size_text"
+                    android:text="自己紹介"/>
+
+                <EditText
+                    android:gravity="start"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_margin_small"
+                    android:layout_marginTop="@dimen/padding_margin_large"
+                    android:layout_marginRight="@dimen/padding_margin_small"
+                    android:layout_marginBottom="@dimen/padding_margin_medium"
+                    android:background="@drawable/custom_edittext_2"
+                    android:minLines="7"
+                    android:maxLength="500"
+                    android:padding="@dimen/padding_margin_small"
+                    android:id="@+id/edtStatus"
+                    android:textSize="@dimen/size_text" />
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/padding_margin_large"
+                    android:layout_marginLeft="@dimen/padding_margin_large"
+                    android:layout_marginBottom="@dimen/padding_margin_large"
+                    android:text="保存"
+                    android:background="@drawable/custom_button_1"
+                    android:textColor="@color/colorWhite"/>
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

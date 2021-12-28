@@ -1,0 +1,67 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ActivityTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorMain</item>
+        <item name="colorPrimaryDark">@color/colorGrey</item>
+        <item name="colorAccent">@color/colorMain</item>
+
+        <item name="materialAlertDialogTheme">@style/AlertDialog</item>
+    </style>
+
+    <style name="AlertDialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButtonStyle</item>
+        <item name="buttonBarNegativeButtonStyle">@style/PositiveButtonStyle</item>
+    </style>
+
+    <style name="PositiveButtonStyle" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">@color/textDefault</item>
+        <item name="rippleColor">@color/textDefault</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!--Text Empty-->
+    <style name="TextEmpty">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">@color/colorGrey</item>
+    </style>
+
+    <style name="ButtonStyle">
+        <item name="background">@drawable/custom_button_1</item>
+        <item name="backgroundColor">@color/colorMain</item>
+    </style>
+
+    <style name="ButtonStyleGrey">
+        <item name="background">@drawable/custom_button_2</item>
+        <item name="backgroundTint">@color/colorGrey</item>
+        <item name="backgroundColor">@color/colorGrey</item>
+    </style>
+
+    <style name="SpinnerTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/spinner_bg</item>
+    </style>
+
+    <style name="Hyperlink">
+        <item name="android:textColor">#3498db</item>
+        <item name="android:background">@drawable/hyperlink_underline</item>
+    </style>
+
+    <style name="myCustomMenuTextAppearance" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">@android:color/primary_text_dark</item>
+    </style>
+
+    <style name="AlertDialogCustom" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="android:layout_marginStart">1.5dp</item>
+        <item name="android:layout_marginEnd">1.5dp</item>
+    </style>
+
+</resources>

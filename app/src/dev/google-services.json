@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "572452768540",
+    "project_id": "neighbor-mate-app",
+    "storage_bucket": "neighbor-mate-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:572452768540:android:ab30094a1f2452093bc8d9",
+        "android_client_info": {
+          "package_name": "com.example.neighbormaterebuild.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "572452768540-i543gci0o3qggq72a10peqf7d0pmbo1e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.neighbormaterebuild",
+            "certificate_hash": "05e4000543046a0134d211a16904a27710bb30a4"
+          }
+        },
+        {
+          "client_id": "572452768540-qdseceaj035dhr6fhfsf4j9e1kajvv9b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfkbTClb7qf6_ovKxrYulkjeR7C4XuQK0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "572452768540-qdseceaj035dhr6fhfsf4j9e1kajvv9b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

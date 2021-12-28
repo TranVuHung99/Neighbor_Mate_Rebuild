@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="padding_margin_small">8dp</dimen>
+    <dimen name="padding_margin_medium">16dp</dimen>
+    <dimen name="padding_margin_large">24dp</dimen>
+    <dimen name="padding_margin_large_text">22dp</dimen>
+    <dimen name="padding_margin_large_small">3dp</dimen>
+    <dimen name="padding_margin_large_small_sub">8dp</dimen>
+    <dimen name="speech_bubble_corners">10dp</dimen>
+    <dimen name="speech_bubble_corners_plus_tail">15dp</dimen>
+    <dimen name="speech_bubble_spacing">5dp</dimen>
+    <dimen name="speech_bubble_tail">25dp</dimen>
+    <dimen name="size_text">18sp</dimen>
+</resources>

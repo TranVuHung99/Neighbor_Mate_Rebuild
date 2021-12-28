@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/rowBG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:padding="10dp"
+            android:background="@color/colorMain"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/pin_roster"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/img_pin_roster"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:src="@drawable/ic_pin"
+                    android:tint="@android:color/white"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/delete_roster"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_delete_roster"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_baseline_delete_24"
+                    android:tint="@android:color/white"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rowFG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:focusable="true"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/border_bottom">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgPin"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:paddingEnd="4dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_pin"
+                        android:visibility="gone"/>
+
+                    <ImageView
+                        android:id="@+id/imgUnread"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/unread"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_margin_large_small"
+                    android:padding="8dp"
+                    tools:ignore="MissingConstraints">
+
+                    <LinearLayout
+                        android:id="@+id/layoutAvatar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_weight="3"
+                            android:layout_width="0dp"
+                            android:id="@+id/cardAvatar"
+                            android:layout_height="wrap_content"
+                            app:cardElevation="0dp"
+                            app:cardCornerRadius="@dimen/padding_margin_small">
+
+                            <com.sangcomz.fishbun.util.SquareImageView
+                                android:id="@+id/imgAvatar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="8"
+                            android:layout_marginStart="8dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/layoutAvatar"
+                            app:layout_constraintTop_toTopOf="parent" >
+
+                            <TextView
+                                android:id="@+id/tvUsername"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:lines="1"
+                                android:text=""
+                                android:textColor="@color/colorMain"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"/>
+
+                            <LinearLayout
+                                android:id="@+id/linearContainer"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/tvUsername">
+
+                                <TextView
+                                    android:id="@+id/tvAreaName"
+                                    android:layout_width="wrap_content"
+                                    android:layout_weight="1"
+                                    android:layout_height="wrap_content"
+                                    android:textStyle="bold"
+                                    android:text=""
+                                    android:textSize="13sp" />
+
+
+                                <TextView
+                                    android:id="@+id/tvTimeMessage"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawablePadding="@dimen/padding_margin_large_small"
+                                    android:drawableLeft="@drawable/ic_clock_regular_svg"
+                                    android:paddingRight="@dimen/padding_margin_medium"
+                                    android:gravity="start"
+                                    android:text="00/00 00:00"
+                                    android:textSize="13sp" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/viewBorderDotted"
+                                android:layout_width="0dp"
+                                android:layout_height="10dp"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/linearContainer">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="11"
+                                    android:background="@drawable/dotted"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toEndOf="@+id/layoutAvatar"
+                                    app:layout_constraintTop_toBottomOf="@+id/linearContainer" />
+
+                                <ImageView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="1"
+                                    android:src="@drawable/ic_chevron_right_solid_svg_16" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:id="@+id/tvMessage"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:lines="2"
+                                android:paddingEnd="8dp"
+                                android:textSize="13sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/viewBorderDotted" />
+
+                            <TextView
+                                android:id="@+id/tvCamera"
+                                android:visibility="gone"
+                                android:gravity="center"
+                                android:layout_width="wrap_content"
+                                android:textSize="13sp"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="@drawable/ic_camera_svg"
+                                android:layout_marginLeft="@dimen/padding_margin_small"
+                                app:layout_constraintBottom_toBottomOf="@+id/tvUsername"
+                                app:layout_constraintStart_toEndOf="@+id/tvUsername"
+                                app:layout_constraintTop_toTopOf="@+id/tvUsername" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

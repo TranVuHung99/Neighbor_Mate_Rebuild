@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent"
+    tools:context=".ui.chat.items.NotificationFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleChatNotifiContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/txtEmpty"
+        android:text="お知らせはありません。"
+        style="@style/TextEmpty"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressLoading"
+        android:indeterminateTint="@color/colorMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+</FrameLayout>
